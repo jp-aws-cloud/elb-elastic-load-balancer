@@ -22,7 +22,12 @@ ELB(Elastic Load Balancing) automatically distributes your incoming application 
 # Elastic Load Balancing types
 
 Elastic Load Balancing provides four types of load balancers that can be used with your Auto Scaling group: 
+
 1. Application Load Balancers
 2. Network Load Balancers
 3. Gateway Load Balancers
 4. Classic Load Balancers.
+
+> There is a key difference in how the load balancer types are configured. With `Application Load Balancers`, `Network Load Balancers`, and `Gateway Load Balancers`, instances are registered as targets with a `target group`, and you route traffic to the target group. 
+
+> With `Classic Load Balancers`, instances are registered directly with the load balancer.
